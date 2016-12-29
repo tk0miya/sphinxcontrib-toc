@@ -4,6 +4,10 @@ sphinxcontrib-toc
 ``sphinxcontrib-toc`` is a Sphinx extension to allow .toc file to build
 the Table of Contents.
 
+This extension empower you to build complicated document with markup
+languages which can not define toctrees.  Specifically, combination with
+recommonmark, you don't need to write any reStructuredText in your document!
+
 Usage
 -----
 
