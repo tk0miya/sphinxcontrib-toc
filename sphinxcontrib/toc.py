@@ -12,6 +12,8 @@ ToC = namedtuple('ToC', ['title', 'entries'])
 
 
 class TableOfContentsParser(Parser):
+    supported = ('tableofcontents',)
+
     def parse_toc(self, inputstring):
         toc = ToC(None, [])
         for line in inputstring.splitlines():
@@ -71,4 +73,5 @@ def setup(app):
                          lambda conf: "%s Documentation" % conf.project,
                          'html')
     app.add_config_value('toc_maxdepth', -1, 'html')
-    app.add_source_parser('.toc', TableOfContentsParser)
+    app.add_source_parser(TableOfContentsParser)
+    app.add_source_suffix('.toc', 'tableofcontents')
