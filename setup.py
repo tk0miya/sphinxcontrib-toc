@@ -4,11 +4,11 @@ from setuptools import setup, find_packages
 
 long_desc = open('README.rst').read()
 
-requires = ['Sphinx>=1.4']
+requires = ['Sphinx>=2.0']
 
 setup(
     name='sphinxcontrib-toc',
-    version='0.9.0',
+    version='1.0.0',
     url='https://github.com/tk0miya/sphinxcontrib-toc',
     license='BSD',
     author='Takeshi KOMIYA',
@@ -24,8 +24,6 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Topic :: Documentation',
